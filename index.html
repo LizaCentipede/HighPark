@@ -27,9 +27,21 @@
         position: absolute;
         top: 20%;
         right: 10%;
+                 animation-name: bord;
+        animation-duration: 10s;
+  animation-iteration-count: infinite;
 
       }
 
+            @keyframes bord {
+  0% {border-color: red;}
+  20% {border-color: orange;}
+  40% {border-color: yellow;}
+  60% {border-color: green;}
+  80% {border-color: blue;}
+  100% {border-color: magenta;}  
+}
+      
       div.text {
         width: 51em;
         height: 45em;
@@ -95,6 +107,7 @@
 
 
       li a {
+        color: #ff3098;
         font-size: 20px;
         border: 4px purple;
         border-style: outset;
@@ -104,13 +117,12 @@
         background-color: rgba(255, 255, 255, 0.7);
         padding: 0.5em;
         font-family: "VT323", monospace;
+                 animation-name: bord;
+        animation-duration: 10s;
+  animation-iteration-count: infinite;
       }
       
-            li a.hover{
-        background-color: white;
-      }
-
-        a:visited {
+             a:visited {
         color: #375c0c;
         text-decoration: none;
       }
@@ -119,10 +131,21 @@
         color: #375c0c;
         text-decoration: none;
       }
-
+      
+      
       a:hover {
         color: #91bf08;
         text-decoration: none;
+      }
+      
+                  li a:visited {
+        text-decoration: none;
+        color: #d11372;
+      }
+
+      li a:hover {
+        color: #ff3098;
+        background-color: white;
       }
             h4{
         font-size: 23px;
@@ -132,6 +155,27 @@
       td,
       p {
         font-size: 20px;
+      }
+      
+            
+          .img1 {
+      opacity: 0;
+    }
+    
+    .img2 {
+      opacity: 1;
+      
+    }
+    
+    .img1:hover {
+      opacity: 1;
+    }
+
+      .man {
+        height: 200px;
+         position: absolute;
+        top: 110%;
+          left: 20%;
       }
       
     </style>
@@ -150,7 +194,16 @@
                          <img class="imo" src="llama.png" alt="Llamas at the High Park zoo." width="200px" height="auto">
                          <img class="imo2" src="hpfeb.png" alt="Grenadier Pond iced over in February." width="400px" height="auto">
       </div>
+            <div class="man">
+
+               <img class="img2" src="bbaba.png" alt="big mouth billy bass" width="500px">
+      </div>
+      <div class="man">
+        <img class="img1" src="bbab.png" alt="big mouth billy bass" width="500px">
+      </div>
     </div>
+  
+    
     <ul id="navba">
       <li><a href="https://lizacentipede.github.io/Website-homepage/#contact">Home</a></li>
       <li><a href="https://lizacentipede.github.io/Things-I-like/">Things I Like</a></li>
